@@ -267,6 +267,9 @@ footer .container:last-of-type .links a {
 }
 
 @media (max-width: 575px) {
+  header.nav .container {
+    margin: 0 18px;
+  }
   footer .container form {
     margin: 0 auto 2rem;
     max-width: 90%;
