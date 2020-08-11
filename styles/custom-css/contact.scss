@@ -90,6 +90,7 @@ header.nav {
 /* body styling */
 .contact {
   & > .container {
+    padding-left: 135px;
     & > nav {
       margin-top: 35px;
 
@@ -408,5 +409,21 @@ footer {
   footer .container .row > div.col-6 {
     padding: 0;
     max-width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    .container {
+      padding-left: 64px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    .container {
+      padding-left: 32px;
+    }
   }
 }
