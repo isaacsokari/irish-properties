@@ -18,6 +18,9 @@ header.nav {
   min-height: 4.5rem;
   margin: 0;
   padding: 1rem 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
+          box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
 }
 
 header.nav .container {
@@ -101,22 +104,21 @@ header.nav .container ul li:last-of-type a {
 }
 
 .faqs > .container::before {
-  content: '';
+  content: url(../../assets/faqs-bg.svg);
   position: absolute;
   z-index: -1;
   height: 216px;
-  width: 90%;
-  left: 5%;
+  max-width: 100%;
+  left: 0%;
   top: 0;
-  -webkit-transform: translate(0, -10%);
-          transform: translate(0, -10%);
-  background-image: url(../../assets/faqs-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  -webkit-transform: translate(0, -30%);
+          transform: translate(0, -30%);
+  overflow: hidden;
 }
 
 .faqs > .container > nav {
   margin-top: 35px;
+  margin-bottom: 100px;
 }
 
 .faqs > .container > nav > .breadcrumb {
@@ -172,15 +174,18 @@ header.nav .container ul li:last-of-type a {
 
 .faqs > .container .row .accordion > .card {
   border: none;
-  border-bottom: 1px solid #e5e5e5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .faqs > .container .row .accordion > .card > .card-header {
   background-color: #fff;
   border: none;
+  outline: none;
   border-bottom: 1px solid #e5e5e5;
   min-height: 46px;
   padding: 0.25rem 0;
+  margin-bottom: 0;
 }
 
 .faqs > .container .row .accordion > .card > .card-header button {
@@ -189,6 +194,10 @@ header.nav .container ul li:last-of-type a {
   font-size: 16px;
   line-height: 21px;
   color: #33475b;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-transform: capitalize;
 }
 
@@ -220,6 +229,10 @@ header.nav .container ul li:last-of-type a {
   font-size: 16px;
   line-height: 19px;
   color: #807784;
+}
+
+.faqs > .container .row .accordion > .card:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* end of body styling */
@@ -431,6 +444,9 @@ footer .container:last-of-type .links a {
   .faqs .container {
     padding-left: 64px;
     padding-right: 30px;
+  }
+  .faqs .container > nav {
+    margin-bottom: 30px;
   }
 }
 

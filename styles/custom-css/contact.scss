@@ -18,6 +18,7 @@ header.nav {
   margin: 0;
   padding: 1rem 0px;
   background-color: #fff;
+  box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
 
   .container {
     min-height: 100% !important;
@@ -95,24 +96,27 @@ header.nav {
     position: relative;
 
     &::before {
-      content: '';
+      content: url(../../assets/contact-bg.svg);
       position: absolute;
       z-index: -1;
-      height: 100%;
-      width: 90%;
-      left: 5%;
+      height: 216px;
+      max-width: 100%;
+      overflow: hidden;
+      left: 0%;
       top: 0;
-      transform: translate(0, -10%);
-      background-image: url(../../assets/contact-bg.svg);
-      background-repeat: no-repeat;
+      transform: translate(0, -40%);
+      object-fit: contain;
+      // background-image: url(../../assets/contact-bg.svg);
+      // background-repeat: no-repeat;
       // background-attachment: ;
       // background-position: top  left auto;
-      background-size: contain;
+      // background-size: contain;
       // background-clip: border-box;
     }
 
     & > nav {
       margin-top: 35px;
+      margin-bottom: 120px;
 
       & > .breadcrumb {
         background-color: transparent;
@@ -441,6 +445,10 @@ footer {
     .container {
       padding-left: 64px;
       padding-right: 30px;
+    }
+
+    & > nav {
+      margin-bottom: 30px;
     }
   }
 }

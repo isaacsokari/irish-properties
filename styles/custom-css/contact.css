@@ -19,6 +19,8 @@ header.nav {
   margin: 0;
   padding: 1rem 0px;
   background-color: #fff;
+  -webkit-box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
+          box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
 }
 
 header.nav .container {
@@ -98,22 +100,23 @@ header.nav .container ul li:last-of-type a {
 }
 
 .contact > .container::before {
-  content: '';
+  content: url(../../assets/contact-bg.svg);
   position: absolute;
   z-index: -1;
-  height: 100%;
-  width: 90%;
-  left: 5%;
+  height: 216px;
+  max-width: 100%;
+  overflow: hidden;
+  left: 0%;
   top: 0;
-  -webkit-transform: translate(0, -10%);
-          transform: translate(0, -10%);
-  background-image: url(../../assets/contact-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .contact > .container > nav {
   margin-top: 35px;
+  margin-bottom: 120px;
 }
 
 .contact > .container > nav > .breadcrumb {
@@ -464,6 +467,9 @@ footer .container:last-of-type .links a {
   .contact .container {
     padding-left: 64px;
     padding-right: 30px;
+  }
+  .contact > nav {
+    margin-bottom: 30px;
   }
 }
 
