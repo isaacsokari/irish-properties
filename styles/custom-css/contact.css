@@ -17,7 +17,8 @@ body {
 header.nav {
   min-height: 4.5rem;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0px;
+  background-color: #fff;
 }
 
 header.nav .container {
@@ -93,6 +94,22 @@ header.nav .container ul li:last-of-type a {
 /* body styling */
 .contact > .container {
   padding-left: 135px;
+  position: relative;
+}
+
+.contact > .container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 90%;
+  left: 5%;
+  top: 0;
+  -webkit-transform: translate(0, -10%);
+          transform: translate(0, -10%);
+  background-image: url(../../assets/contact-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contact > .container > nav {
@@ -111,6 +128,10 @@ header.nav .container ul li:last-of-type a {
   letter-spacing: 0.05em;
   color: #33475b;
   text-decoration: underline;
+}
+
+.contact > .container > nav > .breadcrumb .breadcrumb-item > a {
+  color: #33475b;
 }
 
 .contact > .container > nav > .breadcrumb .breadcrumb-item.active {
@@ -442,6 +463,7 @@ footer .container:last-of-type .links a {
 @media (max-width: 767px) {
   .contact .container {
     padding-left: 64px;
+    padding-right: 30px;
   }
 }
 

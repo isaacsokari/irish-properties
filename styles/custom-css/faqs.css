@@ -91,6 +91,78 @@ header.nav .container ul li:last-of-type a {
 }
 
 /* body styling */
+.faqs {
+  margin-bottom: 120px;
+}
+
+.faqs > .container {
+  padding-left: 135px;
+  position: relative;
+}
+
+.faqs > .container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 216px;
+  width: 90%;
+  left: 5%;
+  top: 0;
+  -webkit-transform: translate(0, -10%);
+          transform: translate(0, -10%);
+  background-image: url(../../assets/faqs-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.faqs > .container > nav {
+  margin-top: 35px;
+}
+
+.faqs > .container > nav > .breadcrumb {
+  background-color: transparent;
+}
+
+.faqs > .container > nav > .breadcrumb .breadcrumb-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #33475b;
+  text-decoration: underline;
+}
+
+.faqs > .container > nav > .breadcrumb .breadcrumb-item > a {
+  color: #33475b;
+}
+
+.faqs > .container > nav > .breadcrumb .breadcrumb-item.active {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #807784;
+}
+
+.faqs > .container > nav > .breadcrumb .breadcrumb-item + .breadcrumb-item.active::before {
+  content: '';
+  text-decoration: none;
+}
+
+.faqs > .container .accordion > .card {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.faqs > .container .accordion > .card > .card-header {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 /* end of body styling */
 footer {
   background-color: #0779e4;
@@ -293,5 +365,18 @@ footer .container:last-of-type .links a {
   footer .container .row > div.col-6 {
     padding: 0;
     max-width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .faqs .container {
+    padding-left: 64px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .faqs .container {
+    padding-left: 32px;
   }
 }

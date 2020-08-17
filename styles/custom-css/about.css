@@ -91,6 +91,63 @@ header.nav .container ul li:last-of-type a {
 }
 
 /* body styling */
+.about > .container {
+  padding-left: 135px;
+  position: relative;
+}
+
+.about > .container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 90%;
+  left: 5%;
+  top: 0;
+  -webkit-transform: translate(0, -10%);
+          transform: translate(0, -10%);
+  background-image: url(../../assets/contact-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about > .container > nav {
+  margin-top: 35px;
+}
+
+.about > .container > nav > .breadcrumb {
+  background-color: transparent;
+}
+
+.about > .container > nav > .breadcrumb .breadcrumb-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #33475b;
+  text-decoration: underline;
+}
+
+.about > .container > nav > .breadcrumb .breadcrumb-item > a {
+  color: #33475b;
+}
+
+.about > .container > nav > .breadcrumb .breadcrumb-item.active {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #807784;
+}
+
+.about > .container > nav > .breadcrumb .breadcrumb-item + .breadcrumb-item.active::before {
+  content: '';
+  text-decoration: none;
+}
+
 /* end of body styling */
 footer {
   background-color: #0779e4;
@@ -293,5 +350,18 @@ footer .container:last-of-type .links a {
   footer .container .row > div.col-6 {
     padding: 0;
     max-width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .container {
+    padding-left: 64px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about .container {
+    padding-left: 32px;
   }
 }
