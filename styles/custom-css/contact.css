@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Gelion, sans-serif;
@@ -18,7 +19,8 @@ header.nav {
   margin: 0;
   padding: 1rem 0px;
   background-color: #fff;
-  box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
+  -webkit-box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
+          box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
 }
 
 header.nav .container {
@@ -28,12 +30,20 @@ header.nav .container {
 
 header.nav .container ul {
   margin-top: 1rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header.nav .container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -98,8 +108,10 @@ header.nav .container ul li:last-of-type a {
   overflow: hidden;
   left: 0%;
   top: 0;
-  transform: translate(0, -40%);
-  object-fit: contain;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .contact > .container > nav {
@@ -130,7 +142,8 @@ header.nav .container ul li:last-of-type a {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #807784;
 }
 
@@ -145,8 +158,13 @@ header.nav .container ul li:last-of-type a {
 
 .contact > .container > .row div form {
   max-width: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact > .container > .row div form .form-control {
@@ -204,6 +222,8 @@ header.nav .container ul li:last-of-type a {
 }
 
 .contact > .container > .row div:nth-of-type(2) p span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 3rem;
   width: 3.5rem;
@@ -220,7 +240,8 @@ header.nav .container ul li:last-of-type a {
 
 .contact #map {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 50vh;
   max-height: 425px;
 }
@@ -269,6 +290,8 @@ footer div.container:first-of-type li:not(:first-of-type) {
 
 footer div.container:first-of-type form {
   max-width: 393px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   height: 3.5rem;
@@ -288,6 +311,18 @@ footer div.container:first-of-type form input.form-control {
   padding-left: 1.5rem;
 }
 
+footer div.container:first-of-type form input.form-control::-webkit-input-placeholder {
+  color: #ffffff70;
+}
+
+footer div.container:first-of-type form input.form-control:-ms-input-placeholder {
+  color: #ffffff70;
+}
+
+footer div.container:first-of-type form input.form-control::-ms-input-placeholder {
+  color: #ffffff70;
+}
+
 footer div.container:first-of-type form input.form-control::placeholder {
   color: #ffffff70;
 }
@@ -305,13 +340,18 @@ footer div.container:first-of-type form button {
   padding: 1rem 37px 1rem 27px;
   color: #ffffff70;
   height: 100%;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 footer div.container:first-of-type form button:hover {
   background-color: #5889bd;
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 footer div.container:first-of-type form button:active,
@@ -330,9 +370,15 @@ footer hr {
 
 footer .container:last-of-type {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .container:last-of-type small {
@@ -349,7 +395,11 @@ footer .container:last-of-type small a {
 }
 
 footer .container:last-of-type .links {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -359,9 +409,15 @@ footer .container:last-of-type .links a {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 1.5rem;
 }
 
@@ -393,8 +449,13 @@ footer .container:last-of-type .links a {
     padding-right: 1rem;
   }
   footer .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .container .row > div.col-6 {
     padding: 0;
@@ -417,3 +478,4 @@ footer .container:last-of-type .links a {
     padding-left: 32px;
   }
 }
+/*# sourceMappingURL=contact.css.map */

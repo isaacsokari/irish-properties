@@ -18,6 +18,9 @@ header.nav {
   min-height: 4.5rem;
   margin: 0;
   padding: 1rem 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
+          box-shadow: 0px 3px 4px rgba(196, 196, 196, 0.25);
 }
 
 header.nav .container {
@@ -106,7 +109,6 @@ header.nav .container ul li:last-of-type a {
   top: 0;
   -webkit-transform: translate(0, -10%);
           transform: translate(0, -10%);
-  background-image: url(../../assets/contact-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -365,3 +367,4 @@ footer .container:last-of-type .links a {
     padding-left: 32px;
   }
 }
+/*# sourceMappingURL=about.css.map */
