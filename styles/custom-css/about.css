@@ -150,6 +150,69 @@ header.nav .container ul li:last-of-type a {
   text-decoration: none;
 }
 
+.partners {
+  margin-bottom: 165px;
+}
+
+.partners .container h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #33475b;
+  position: relative;
+}
+
+.partners .container h2::after {
+  content: '';
+  position: absolute;
+  width: 178px;
+  height: 12px;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-60%, 0%);
+          transform: translate(-60%, 0%);
+  background: rgba(228, 96, 117, 0.15);
+}
+
+.partners .container p {
+  max-width: 394px;
+  min-height: 39px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #807784;
+  margin: auto;
+  margin-bottom: 96px;
+}
+
+.partners .container .row {
+  min-height: 87px;
+  max-width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+}
+
+.partners .container .row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partners .container .row > div img {
+  margin: 0.75rem auto;
+}
+
 /* end of body styling */
 footer {
   background-color: #0779e4;
@@ -332,6 +395,12 @@ footer .container:last-of-type .links a {
   footer .container form {
     margin: 0 auto 2rem;
     max-width: 90%;
+  }
+  .partners {
+    margin-bottom: 4rem;
+  }
+  .partners .container p {
+    margin-bottom: 2rem;
   }
 }
 
