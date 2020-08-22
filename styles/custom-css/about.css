@@ -109,6 +109,19 @@ header.nav .container ul li:last-of-type a {
   overflow-x: hidden;
 }
 
+@media (max-width: 767px) {
+  .about > .container {
+    padding-left: 64px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about > .container {
+    padding-left: 32px;
+  }
+}
+
 .about > .container::before {
   content: '';
   position: absolute;
@@ -162,6 +175,12 @@ header.nav .container ul li:last-of-type a {
 
 .about > .container > .row > div {
   overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .about > .container > .row > div {
+    padding-left: 0;
+  }
 }
 
 .about > .container .row {
@@ -250,8 +269,17 @@ header.nav .container ul li:last-of-type a {
   }
 }
 
-.our-team .container {
-  max-width: 1184px;
+@media (max-width: 767px) {
+  .our-team .container {
+    padding-left: 64px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-team .container {
+    padding-left: 32px;
+  }
 }
 
 .our-team .container h2 {
@@ -277,6 +305,7 @@ header.nav .container ul li:last-of-type a {
 }
 
 .our-team .container > p {
+  width: 100%;
   max-width: 439px;
   min-height: 39px;
   font-style: normal;
@@ -298,6 +327,7 @@ header.nav .container ul li:last-of-type a {
 
 .our-team .container .member {
   max-width: 364px;
+  width: 100%;
   height: 381px;
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -350,6 +380,19 @@ header.nav .container ul li:last-of-type a {
   margin-bottom: 165px;
 }
 
+@media (max-width: 767px) {
+  .partners .container {
+    padding-left: 64px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .partners .container {
+    padding-left: 32px;
+  }
+}
+
 .partners .container h2 {
   font-style: normal;
   font-weight: normal;
@@ -358,6 +401,12 @@ header.nav .container ul li:last-of-type a {
   text-align: center;
   color: #33475b;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .partners .container h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .partners .container h2::after {
@@ -617,19 +666,6 @@ footer .container:last-of-type .links a {
   footer .container .row > div.col-6 {
     padding: 0;
     max-width: 100% !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .about .container {
-    padding-left: 64px;
-    padding-right: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  .about .container {
-    padding-left: 32px;
   }
 }
 /*# sourceMappingURL=about.css.map */
