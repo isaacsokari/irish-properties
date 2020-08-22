@@ -325,6 +325,10 @@ header.nav .container ul li:last-of-type a {
   }
 }
 
+.our-team .container .row {
+  margin: 0;
+}
+
 .our-team .container .member {
   max-width: 364px;
   width: 100%;
