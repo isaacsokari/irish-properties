@@ -94,12 +94,12 @@ header.nav .container ul li:last-of-type a {
 }
 
 /* body styling */
-.about > .container {
+.property-listing > .container {
   padding-left: 135px;
   position: relative;
 }
 
-.about > .container::before {
+.property-listing > .container::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -113,15 +113,15 @@ header.nav .container ul li:last-of-type a {
   background-size: contain;
 }
 
-.about > .container > nav {
+.property-listing > .container > nav {
   margin-top: 35px;
 }
 
-.about > .container > nav > .breadcrumb {
+.property-listing > .container > nav > .breadcrumb {
   background-color: transparent;
 }
 
-.about > .container > nav > .breadcrumb .breadcrumb-item {
+.property-listing > .container > nav > .breadcrumb .breadcrumb-item {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -131,11 +131,11 @@ header.nav .container ul li:last-of-type a {
   text-decoration: underline;
 }
 
-.about > .container > nav > .breadcrumb .breadcrumb-item > a {
+.property-listing > .container > nav > .breadcrumb .breadcrumb-item > a {
   color: #33475b;
 }
 
-.about > .container > nav > .breadcrumb .breadcrumb-item.active {
+.property-listing > .container > nav > .breadcrumb .breadcrumb-item.active {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -145,7 +145,7 @@ header.nav .container ul li:last-of-type a {
   color: #807784;
 }
 
-.about > .container > nav > .breadcrumb .breadcrumb-item + .breadcrumb-item.active::before {
+.property-listing > .container > nav > .breadcrumb .breadcrumb-item + .breadcrumb-item.active::before {
   content: '';
   text-decoration: none;
 }
