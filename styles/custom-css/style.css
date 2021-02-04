@@ -579,6 +579,11 @@ header.nav .container ul li:last-of-type a {
   margin-bottom: 144px;
 }
 
+.testimonials .container {
+  position: relative;
+  min-height: 90vh;
+}
+
 .testimonials .container h2 {
   height: 24px;
   font-style: normal;
@@ -588,7 +593,7 @@ header.nav .container ul li:last-of-type a {
   color: #e46075;
 }
 
-.testimonials .container p {
+.testimonials .container > p {
   max-width: 500px;
   height: 38px;
   font-style: normal;
@@ -600,7 +605,21 @@ header.nav .container ul li:last-of-type a {
   margin-bottom: 96px;
 }
 
-.testimonials .container img {
+@media (max-width: 592px) {
+  .testimonials .container > p {
+    bottom: 2rem;
+  }
+}
+
+.testimonials .container .testimony {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.testimonials .container .testimony img {
   margin-left: auto;
   margin-right: 0;
   max-width: 100%;
@@ -609,6 +628,31 @@ header.nav .container ul li:last-of-type a {
   height: max-content;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.testimonials .container .testimony-text {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  -webkit-transform: translateX(-57%);
+          transform: translateX(-57%);
+  text-align: center;
+}
+
+@media (max-width: 592px) {
+  .testimonials .container .testimony-text {
+    bottom: 1rem;
+  }
+}
+
+.testimonials .container .testimony-text h3 {
+  font-size: 1.5rem;
+}
+
+.testimonials .container .testimony-text p {
+  font-size: 0.75rem;
+  line-height: unset;
+  max-width: 15rem;
 }
 
 .partners {
