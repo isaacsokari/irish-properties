@@ -526,6 +526,10 @@ header.nav {
   min-height: 613px;
   margin-bottom: 144px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+
   .container {
     position: relative;
     min-height: 90vh;
@@ -565,6 +569,7 @@ header.nav {
         margin-left: auto;
         margin-right: 0;
         max-width: 100%;
+        min-height: 455px;
         height: max-content;
         object-fit: cover;
       }

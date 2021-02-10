@@ -579,6 +579,12 @@ header.nav .container ul li:last-of-type a {
   margin-bottom: 144px;
 }
 
+@media (max-width: 768px) {
+  .testimonials {
+    margin-bottom: 5rem;
+  }
+}
+
 .testimonials .container {
   position: relative;
   min-height: 90vh;
@@ -623,6 +629,7 @@ header.nav .container ul li:last-of-type a {
   margin-left: auto;
   margin-right: 0;
   max-width: 100%;
+  min-height: 455px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
